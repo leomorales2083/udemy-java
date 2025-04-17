@@ -7,8 +7,7 @@ public class CicloDoWhile {
 
         do {
             System.out.println(contador++);
-                     
-        } while (contador < 1);
+        } while (contador <= 3);
     }
     
 }
