@@ -19,44 +19,35 @@ public class Calculadora {
                     Escoge una opción:\s""");
                     var opcion = consola.nextInt();
 
+                    if(opcion >= 1 && opcion <=4){
+                        System.out.print("Ingrese el primer Valor: ");
+                        primerValor = consola.nextInt();
+                        System.out.print("Ingresa el segundo Valor: ");
+                        segundoValor = consola.nextInt();
+                    }
+
                     switch (opcion) {
                         case 1 -> {
-                            System.out.print("Ingrese el primer Valor: ");
-                            primerValor = consola.nextInt();
-                            System.out.print("Ingresa el segundo Valor: ");
-                            segundoValor = consola.nextInt();
                             resultado = primerValor + segundoValor;
-                            System.out.printf("El resultado de la suma: %.2f + %.2f = %.2f %n%n", primerValor, segundoValor, resultado);
+                            System.out.printf("El resultado de la suma: %.2f %n%n", resultado);
                         }
 
                         case 2 -> {
-                            System.out.print("Ingrese el primer Valor: ");
-                            primerValor = consola.nextInt();
-                            System.out.print("Ingresa el segundo Valor: ");
-                            segundoValor = consola.nextInt();
                             resultado = primerValor - segundoValor;
-                            System.out.printf("El resultado de la resta: %.2f - %.2f = %.2f %n%n", primerValor, segundoValor, resultado);
+                            System.out.printf("El resultado de la resta: %.2f %n%n", resultado);
                         }
 
                         case 3 -> {
-                            System.out.print("Ingrese el primer Valor: ");
-                            primerValor = consola.nextInt();
-                            System.out.print("Ingresa el segundo Valor: ");
-                            segundoValor = consola.nextInt();
                             resultado = primerValor * segundoValor;
-                            System.out.printf("El resultado de la multiplicar: %.2f * %.2f = %.2f %n%n", primerValor, segundoValor, resultado);
+                            System.out.printf("El resultado de la multiplicación: %.2f %n%n", resultado);
                         }
 
                         case 4 -> {
-                            System.out.print("Ingrese el primer Valor: ");
-                            primerValor = consola.nextInt();
-                            System.out.print("Ingresa el segundo Valor: ");
-                            segundoValor = consola.nextInt();
                             if(segundoValor == 0)
                                 System.out.println("No se puede dividir para el valor de 0...");
                             else{
                             resultado = primerValor / segundoValor;
-                            System.out.printf("El resultado de dividir de %.2f / %.2f = %.2f %n%n", primerValor, segundoValor, resultado);
+                            System.out.printf("El resultado de división: %.2f %n%n", resultado);
                             }
                         }
 
@@ -64,6 +55,7 @@ public class Calculadora {
                             System.out.println("Cerrando la calculadora.....\n");
                             salir = true;
                         }
+
                         default -> System.out.println("Opción Inválida....");
                     }
         }
