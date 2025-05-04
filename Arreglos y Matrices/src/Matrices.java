@@ -3,7 +3,7 @@ public class Matrices {
         
         //Declaración de matrices
 
-        int[][] matriz = new int[4][4];  //Declarar la matriz
+        //int[][] matriz = new int[4][4];  //Declarar la matriz
         //var mattriz = new int[4][4];
 
         var centenas = new int[][]{ //Declarar e inicializar los valores de la matriz
