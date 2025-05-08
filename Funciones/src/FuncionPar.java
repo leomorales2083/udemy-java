@@ -15,9 +15,8 @@ public class FuncionPar {
         var consola = new java.util.Scanner(System.in);
         System.out.print("Proporcione un valor numerico entero: ");
         var numeroEsPar = Integer.parseInt(consola.nextLine());
-        var resultado = esPar(numeroEsPar);
-
-        System.out.printf("El numero %d, es par? :  %b: %n", numeroEsPar, resultado );
+        
+        System.out.printf("El numero %d, es par? :  %b: %n", numeroEsPar, esPar(numeroEsPar) );
 
         consola.close();
     }
