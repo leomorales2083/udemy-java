@@ -16,6 +16,10 @@ public class Constructores {
         objeto1.sms1 = "Segundo mensaje";
         objeto1.mensaje();
 
+        var objeto2 = new Aritmetica(15, 78);
+        //objeto2.operando1 = 15;
+        //objeto2.operando2 = 78;
+        objeto2.sumar();
 
     }
 }
