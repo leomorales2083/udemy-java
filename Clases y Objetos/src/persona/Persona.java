@@ -7,14 +7,22 @@ public class Persona {
     private String apellido;
 
     //Se crea el método constructor como público
-    public Persona(String nombre, String apellido){
+    /*public Persona(String nombre, String apellido){
         this.nombre = nombre;
         this.apellido = apellido;
-    }
+    }*/
 
     void mostrarPersona(){   //Metodo de la clase... 
         System.out.println("Nombre: " + this.nombre); //this nos indica que es un metodo de nuestra clase principal
         System.out.println("Apellido: " + this.apellido);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("*** Cración de Clase y Objetos Persona ***");
+        var objeto1 = new Persona(); // ser crea una nueva instancia para la objeto1.
+        objeto1.nombre = "Layla";  //podemos acceder a los atributos de la clase persona
+        objeto1.apellido = "Acosta";
+        objeto1.mostrarPersona(); //accedemos al metodo de la clase persona.
     }
 
     //Metodos de encapsulamiento get y set
