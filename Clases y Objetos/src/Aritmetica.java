@@ -18,7 +18,7 @@ public class Aritmetica {
     void restar(){
         var resultado = operando1 - operando2;
         System.out.println("Resultado resta: " + resultado);
-    }
+    } 
 
     public static void main(String[] args) {
         
